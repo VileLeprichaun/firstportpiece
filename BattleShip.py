@@ -23,9 +23,10 @@ ship_row = random_row(board)
 ship_col = random_col(board)
 
 
-guess_row =int()
+guess_row =int(raw_input("Guess Row: "))
+guess_col = int(raw_input("Guess Column:"))
 
-guess_row = int()
+
 #Board variables
 max_rows = 9
 max_column = 9 
