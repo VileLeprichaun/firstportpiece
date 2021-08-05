@@ -1,6 +1,6 @@
 # BattleShip
-from random import randint
-import os
+from random import randint, random
+
 
 board = []
 
@@ -15,6 +15,7 @@ print_board(board)
 
 def random_row(board):
     return randint(0, len(board)-1)
+
 def random_col(board):
     return randint(0, len(board[0])-1)
 
@@ -23,8 +24,8 @@ ship_row = random_row(board)
 ship_col = random_col(board)
 
 
-guess_row =int(raw_input("Guess Row: "))
-guess_col = int(raw_input("Guess Column:"))
+guess_row = int(input("Guess Row: "))
+guess_col = int(input("Guess Col: "))
 
 
 #Board variables
